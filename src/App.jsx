@@ -15,6 +15,7 @@ import Offer from './components/Offer'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import ChatWidget from './components/ChatWidget'
 import Cart from './components/Cart'
 import { CartContext } from './context/CartContext'
 
@@ -61,6 +62,7 @@ export default function App() {
         <Footer />
 
         <Cart />
+        <ChatWidget />
       </div>
     </CartContext.Provider>
   )

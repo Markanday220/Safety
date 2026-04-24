@@ -74,26 +74,31 @@ export default function Solutions() {
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {solutions.map((sol, i) => {
             const Icon = sol.icon
             return (
-              <div
+              <a
                 key={i}
-                className={`glass-card gradient-border p-7 group hover:-translate-y-2 transition-all duration-300 bg-white`}
+                href="https://www.safetyplus.co.uk/"
+                target="_blank"
+                rel="noreferrer"
+                className="group no-underline"
               >
-                <div className="mb-5">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-slate-100 border border-slate-200 ${sol.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <Icon className="w-6 h-6" />
+                <div className={`glass-card gradient-border p-7 group-hover:-translate-y-2 transition-all duration-300 bg-white hover:-translate-y-2`}>
+                  <div className="mb-5">
+                    <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-slate-100 border border-slate-200 ${sol.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                      <Icon className="w-6 h-6" />
+                    </div>
+                    <h3 className="text-xl font-display font-bold text-brand-dark mb-2">{sol.title}</h3>
+                    <p className={`text-sm font-semibold ${sol.color} mb-3`}>{sol.benefit}</p>
+                    <p className="text-slate-600 text-sm leading-relaxed">{sol.detail}</p>
                   </div>
-                  <h3 className="text-xl font-display font-bold text-brand-dark mb-2">{sol.title}</h3>
-                  <p className={`text-sm font-semibold ${sol.color} mb-3`}>{sol.benefit}</p>
-                  <p className="text-slate-600 text-sm leading-relaxed">{sol.detail}</p>
+                  <div className={`flex items-center gap-2 text-sm font-medium ${sol.color} hover:gap-3 transition-all duration-200`}>
+                    Explore Range <ArrowRight className="w-4 h-4" />
+                  </div>
                 </div>
-                <button className={`flex items-center gap-2 text-sm font-medium ${sol.color} hover:gap-3 transition-all duration-200`}>
-                  Explore Range <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
+              </a>
             )
           })}
         </div>

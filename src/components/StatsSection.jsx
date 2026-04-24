@@ -1,12 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 
 const stats = [
-  { value: 10000, suffix: '+', label: 'Businesses Protected', color: 'text-brand-gold' },
+  { value: 10000, suffix: '+', label: 'Businesses Protected', color: 'text-brand-dark' },
   { value: 500, suffix: '+', label: 'Safety Products', color: 'text-brand-dark' },
   { value: 15, suffix: '+', label: 'Years of Excellence', color: 'text-brand-dark' },
-  { value: 99, suffix: '.8%', label: 'On-Time Delivery Rate', color: 'text-brand-gold' },
+  { value: 99, suffix: '.8%', label: 'On-Time Delivery Rate', color: 'text-brand-dark' },
   { value: 0, suffix: ' Compromises', label: 'On Quality Standards', color: 'text-brand-dark' },
-  { value: 28, suffix: ' States', label: 'Pan-India Reach', color: 'text-brand-dark' },
+  { value: 4, suffix: ' Nations', label: 'UK Coverage', color: 'text-brand-dark' },
 ]
 
 function useCounter(target, duration = 2000, start = false) {
@@ -32,8 +32,8 @@ function useCounter(target, duration = 2000, start = false) {
 function StatCard({ stat, started }) {
   const count = useCounter(stat.value, 2000, started)
   return (
-    <div className="glass-card p-8 text-center group hover:-translate-y-2 transition-all duration-300">
-      <div className={`text-4xl md:text-5xl font-display font-bold mb-3 ${stat.color}`}>
+    <div className="w-full glass-card p-2 text-center group hover:-translate-y-2 transition-all duration-300">
+      <div className={`w-full text-3xl md:text-3xl font-display font-bold mb-3 ${stat.color}`}>
         {count.toLocaleString()}{stat.suffix}
       </div>
       <div className="text-sm text-slate-600 leading-relaxed">{stat.label}</div>

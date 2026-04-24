@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowRight, Play, ChevronDown, Zap, Award, Shield } from 'lucide-react'
+import { ArrowRight, Play, ChevronDown, Zap, Shield } from 'lucide-react'
 
 const pills = ['ISO 45001 Certified', '10,000+ Businesses', 'Free 2-Day Delivery', 'Expert Consultation']
 
@@ -17,12 +17,6 @@ export default function Hero() {
         {/* Light corporate overlays for readability */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/75 to-white/95" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/85 via-transparent to-white/70" />
-      </div>
-
-      {/* Floating badge */}
-      <div className="absolute top-32 right-8 md:right-24 hidden md:flex items-center gap-2 glass px-4 py-2 rounded-full text-xs font-medium text-brand-gold animate-float z-20" style={{ animationDelay: '-2s' }}>
-        <Award className="w-4 h-4" />
-        <span>India's #1 Safety Brand</span>
       </div>
 
       {/* Content */}

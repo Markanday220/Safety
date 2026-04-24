@@ -9,7 +9,7 @@ const certifications = [
 ]
 
 const tickerItems = [
-  '✦ Free Shipping on Orders over ₹2,999',
+  '✦ Free Shipping on Orders over $2,999',
   '✦ Extra Discount on Bulk Orders — Buy More Save More!',
   '✦ 30 Days Returns Policy',
   '✦ ISO 45001 Certified Products',
@@ -51,7 +51,7 @@ export default function Trust() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
             {[
               { icon: Award, value: '15+ Years', label: 'Industry Experience', color: 'text-brand-dark' },
-              { icon: Globe, value: '28 States', label: 'Pan-India Delivery', color: 'text-brand-dark' },
+              { icon: Globe, value: 'Across UK', label: 'Nationwide Delivery', color: 'text-brand-dark' },
               { icon: CheckCircle, value: '100%', label: 'Compliance Guaranteed', color: 'text-brand-gold' },
               { icon: TrendingUp, value: '4.9/5', label: 'Customer Rating', color: 'text-brand-dark' },
             ].map((item, i) => {

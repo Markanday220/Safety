@@ -60,15 +60,15 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-16 max-w-4xl mx-auto rounded-[2rem] bg-white/58 backdrop-blur-sm border border-white/60 shadow-[0_24px_70px_rgba(255,255,255,0.28)] px-6 py-8 md:px-10 md:py-10">
-          <div className="section-tag mb-4 justify-center">
+          <div className="mb-4 flex items-center justify-center gap-2 text-brand-gold text-xs font-semibold tracking-widest uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
             How It Works
           </div>
-          <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-brand-dark mb-5">
+          <h2 className="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-white mb-5">
             Protected in{' '}
-            <span className="gradient-text">4 Simple Steps</span>
+            <span className="text-brand-gold">4 Simple Steps</span>
           </h2>
-          <p className="text-brand-dark text-lg md:text-[1.15rem] font-medium max-w-2xl mx-auto">
+          <p className="text-white/90 text-lg md:text-[1.15rem] font-medium max-w-2xl mx-auto">
             From first consultation to full compliance — we handle every step so you can focus on running your business.
           </p>
         </div>

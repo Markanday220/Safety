@@ -1,0 +1,6 @@
+<svg width="220" height="120" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="42" y="16" width="136" height="88" fill="#ffcd1f"/>
+  <text x="110" y="73" text-anchor="middle" fill="#111111" font-size="48" font-weight="800" font-family="Arial Black, Arial, Helvetica, sans-serif">CAT</text>
+  <path d="M113 57l13 16h-26z" fill="#111111"/>
+  <circle cx="161" cy="50" r="2.8" fill="#111111"/>
+</svg>

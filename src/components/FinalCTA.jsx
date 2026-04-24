@@ -59,7 +59,7 @@ export default function FinalCTA() {
         {/* Micro trust signals */}
         <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-slate-600">
           {[
-            'Free shipping above ₹2,999',
+            'Free shipping above $2,999',
             '30-day no-risk returns',
             'ISO 45001 certified products',
             '24/7 expert support',

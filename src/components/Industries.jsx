@@ -17,7 +17,7 @@ const industries = [
   {
     name: 'Manufacturing',
     desc: 'Line-ready PPE for fast-paced production floors.',
-    image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80&fit=crop',
+    image: 'https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=600&q=80&fit=crop',
     color: 'from-brand-dark/70',
   },
   {

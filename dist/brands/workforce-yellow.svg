@@ -1,0 +1,7 @@
+<svg width="220" height="120" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <text x="111" y="28" text-anchor="middle" fill="#3f3f46" font-size="20" font-weight="800" font-family="Arial, Helvetica, sans-serif">WORKFORCE</text>
+  <path d="M48 40h27l31 23 17-23h27l-31 39-35 2-36-41z" fill="#fde61a" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M110 40h24l28 25-8 10-36-35z" fill="#fde61a" stroke="#d1d5db" stroke-width="1.5"/>
+  <path d="M117 78l50-8" stroke="#71717a" stroke-width="2"/>
+  <text x="162" y="88" fill="#3f3f46" font-size="7" font-weight="700" font-family="Arial, Helvetica, sans-serif" transform="rotate(-18 162 88)">SAFETY FOOTWEAR</text>
+</svg>

@@ -2,137 +2,44 @@ import React from 'react'
 
 const brands = [
   {
-    name: 'TITAN',
-    sub: 'Safety Footwear',
-    bg: '#000',
-    text: '#fff',
-    accent: '#f59e0b',
-    border: '#333',
-    style: 'bold',
+    name: 'Goodyear',
+    logo: '/brands/goodyear.svg',
   },
   {
-    name: 'WORKFORCE',
-    sub: 'Safety Footwear',
-    bg: '#fff',
-    text: '#f97316',
-    accent: '#f97316',
-    border: '#e5e7eb',
-    style: 'bold',
+    name: 'Titan Safety Footwear',
+    logo: '/brands/titan.svg',
   },
   {
-    name: 'WOOD\nWORLD',
-    sub: '',
-    bg: '#fff',
-    text: '#f59e0b',
-    accent: '#ef4444',
-    border: '#e5e7eb',
-    style: 'bold',
+    name: 'Workforce Safety Footwear',
+    logo: '/brands/workforce-yellow.svg',
   },
   {
-    name: 'Le Cooper',
-    sub: 'Workwear',
-    bg: '#dc2626',
-    text: '#fff',
-    accent: '#fff',
-    border: '#dc2626',
-    style: 'normal',
+    name: 'Workforce',
+    logo: '/brands/workforce-orange.svg',
+  },
+  {
+    name: 'Wood World',
+    logo: '/brands/wood-world.svg',
+  },
+  {
+    name: 'Lee Cooper Workwear',
+    logo: '/brands/lee-cooper.svg',
   },
   {
     name: 'CAT',
-    sub: '',
-    bg: '#f59e0b',
-    text: '#000',
-    accent: '#000',
-    border: '#f59e0b',
-    style: 'black',
-  },
-  {
-    name: 'ARMA',
-    sub: 'Safety Footwear',
-    bg: '#fff',
-    text: '#dc2626',
-    accent: '#dc2626',
-    border: '#e5e7eb',
-    style: 'bold',
-  },
-  {
-    name: 'KARAM',
-    sub: 'Safety',
-    bg: '#1d4ed8',
-    text: '#fff',
-    accent: '#fbbf24',
-    border: '#1d4ed8',
-    style: 'bold',
-  },
-  {
-    name: 'UVEX',
-    sub: 'Protection',
-    bg: '#fff',
-    text: '#1d4ed8',
-    accent: '#1d4ed8',
-    border: '#e5e7eb',
-    style: 'bold',
-  },
-  {
-    name: '3M',
-    sub: 'PPE Solutions',
-    bg: '#dc2626',
-    text: '#fff',
-    accent: '#fff',
-    border: '#dc2626',
-    style: 'black',
-  },
-  {
-    name: 'HONEYWELL',
-    sub: 'Safety',
-    bg: '#fff',
-    text: '#dc2626',
-    accent: '#dc2626',
-    border: '#e5e7eb',
-    style: 'bold',
+    logo: '/brands/cat.svg',
   },
 ]
 
 function BrandCard({ brand }) {
   return (
-    <div
-      className="inline-flex flex-col items-center justify-center mx-4 rounded-xl border-2 transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg cursor-default flex-shrink-0"
-      style={{
-        backgroundColor: brand.bg,
-        borderColor: brand.border,
-        width: '140px',
-        height: '90px',
-        boxShadow: '0 2px 12px rgba(0,0,0,0.08)',
-      }}
-    >
-      <div
-        className="text-center leading-tight"
-        style={{
-          color: brand.text,
-          fontWeight: brand.style === 'black' ? 900 : 700,
-          fontSize: brand.name.length > 6 ? '14px' : brand.name === 'CAT' ? '28px' : '18px',
-          fontFamily: '"Plus Jakarta Sans", sans-serif',
-          letterSpacing: '0.05em',
-          whiteSpace: 'pre-line',
-        }}
-      >
-        {brand.name}
-      </div>
-      {brand.sub && (
-        <div
-          className="text-center mt-0.5"
-          style={{
-            color: brand.text,
-            fontSize: '9px',
-            opacity: 0.7,
-            fontFamily: '"Inter", sans-serif',
-            letterSpacing: '0.1em',
-            textTransform: 'uppercase',
-          }}
-        >
-          {brand.sub}
-        </div>
-      )}
+    <div className="inline-flex items-center justify-center mx-3 sm:mx-4 rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-[0_4px_18px_rgba(15,23,42,0.06)] transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(15,23,42,0.12)] cursor-default flex-shrink-0 w-[160px] h-[96px] sm:w-[180px] sm:h-[108px]">
+      <img
+        src={brand.logo}
+        alt={brand.name}
+        className="max-w-full max-h-full object-contain"
+        draggable="false"
+      />
     </div>
   )
 }

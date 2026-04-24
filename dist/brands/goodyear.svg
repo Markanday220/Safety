@@ -1,0 +1,6 @@
+<svg width="220" height="120" viewBox="0 0 220 120" xmlns="http://www.w3.org/2000/svg">
+  <rect x="14" y="34" width="192" height="52" rx="0" fill="#0b57a4"/>
+  <text x="28" y="69" fill="#ffd21f" font-size="26" font-weight="700" font-style="italic" font-family="Arial, Helvetica, sans-serif">GOOD</text>
+  <text x="112" y="69" fill="#ffd21f" font-size="26" font-weight="700" font-style="italic" font-family="Arial, Helvetica, sans-serif">YEAR</text>
+  <path d="M127 42c5 0 9 4 9 9 0 4-3 8-8 9l6 11-7 4-7-13c-3 0-6-2-8-4l-11 4 7-9-6-7 12 2c3-4 7-6 13-6z" fill="#ffd21f"/>
+</svg>

@@ -3,10 +3,10 @@ import { Star, Quote, ChevronLeft, ChevronRight, Building2 } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Rajesh Mehta',
+    name: 'Kristy Streeter',
     role: 'Safety Manager',
     company: 'Larsen & Toubro',
-    avatar: 'RM',
+    avatar: 'KS',
     rating: 5,
     text: "We switched to SafetyPlus after a near-miss incident. The quality difference is night and day. Our accident rate has dropped by 78% in 8 months. These aren't just products — they're life insurance.",
     result: '78% fewer incidents',
@@ -15,10 +15,10 @@ const testimonials = [
     borderColor: 'border-brand-gold/25',
   },
   {
-    name: 'Priya Sharma',
+    name: 'Mags',
     role: 'HSE Director',
     company: 'ONGC',
-    avatar: 'PS',
+    avatar: 'M',
     rating: 5,
     text: "The compliance kits saved us from a ₹45 lakh potential penalty during our last audit. The team at SafetyPlus understood our regulatory environment better than our own consultants.",
     result: '₹45L penalty avoided',
@@ -27,10 +27,10 @@ const testimonials = [
     borderColor: 'border-slate-200',
   },
   {
-    name: 'Vikram Singh',
+    name: 'Oliver Smith',
     role: 'Operations Head',
     company: 'Tata Steel',
-    avatar: 'VS',
+    avatar: 'OS',
     rating: 5,
     text: "We've been ordering in bulk for 3 plants. Delivery is always on time, quality is consistent, and the after-sales support is exceptional. SafetyPlus is the only vendor we fully trust.",
     result: '3 plants protected',
@@ -39,10 +39,10 @@ const testimonials = [
     borderColor: 'border-slate-200',
   },
   {
-    name: 'Anita Patel',
+    name: 'Anthony',
     role: 'Facility Manager',
     company: 'Reliance Industries',
-    avatar: 'AP',
+    avatar: 'A',
     rating: 5,
     text: "The ProGuard helmets have been phenomenal. After 18 months of heavy industrial use, they still look and perform like new. The ROI compared to cheaper alternatives is undeniable.",
     result: '18 months, zero failures',
@@ -144,12 +144,12 @@ export default function Testimonials() {
         </div>
 
         {/* Small cards grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
           {testimonials.map((t, i) => (
             <button
               key={i}
               onClick={() => setActive(i)}
-              className={`glass-card p-4 text-left transition-all duration-300 ${i === active ? 'border-brand-gold/40' : 'opacity-60 hover:opacity-100'}`}
+              className={`glass-card p-4 text-left transition-all duration-300 ${i === active ? 'border-brand-gold/40' : 'border-slate-200 hover:border-brand-gold/40'}`}
             >
               <div className="flex items-center gap-2 mb-1">
                 <Building2 className="w-3.5 h-3.5 text-slate-500" />

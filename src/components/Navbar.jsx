@@ -1,20 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { ShoppingCart, Menu, X } from 'lucide-react'
-import { CartContext } from '../context/CartContext'
-
-const navLinks = [
-  { label: 'Products', href: '#products' },
-  { label: 'Solutions', href: '#solutions' },
-  { label: 'About', href: '#why-us' },
-  { label: 'Contact', href: '#footer' },
-]
+import React, { useState, useEffect } from 'react'
+import { Menu, X } from 'lucide-react'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const { cartItems, setCartOpen } = useContext(CartContext)
-
-  const totalQty = cartItems.reduce((acc, i) => acc + i.qty, 0)
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
@@ -42,55 +31,18 @@ export default function Navbar() {
             />
           </a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
-            {navLinks.map(link => (
-              <a
-                key={link.label}
-                href={link.href}
-                className="text-sm text-slate-700 hover:text-brand-dark font-medium transition-colors duration-200 relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-brand-gold transition-all duration-300 group-hover:w-full" />
-              </a>
-            ))}
-          </nav>
-
           {/* CTA Row */}
           <div className="hidden md:flex items-center gap-3">
-            <button
-              onClick={() => setCartOpen(true)}
-              className="relative p-2.5 rounded-xl border border-slate-200 hover:border-slate-300 bg-white hover:bg-slate-50 transition-all duration-200"
-              aria-label="Open cart"
-            >
-              <ShoppingCart className="w-5 h-5 text-brand-dark" />
-              {totalQty > 0 && (
-                <span className="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-brand-gold text-brand-dark text-xs font-bold flex items-center justify-center">
-                  {totalQty}
-                </span>
-              )}
-            </button>
             <a
-              href="#products"
+              href="#footer"
               className="btn-gold text-sm px-5 py-2.5"
             >
-              Shop Now
+              Enquiry Now
             </a>
           </div>
 
           {/* Mobile toggle */}
           <div className="flex md:hidden items-center gap-3">
-            <button
-              onClick={() => setCartOpen(true)}
-              className="relative p-2 rounded-lg border border-slate-200 bg-white"
-            >
-              <ShoppingCart className="w-5 h-5 text-brand-dark" />
-              {totalQty > 0 && (
-                <span className="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-brand-gold text-brand-dark text-xs font-bold flex items-center justify-center">
-                  {totalQty}
-                </span>
-              )}
-            </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
               className="p-2 rounded-lg border border-slate-200 bg-white transition-colors"
@@ -108,22 +60,12 @@ export default function Navbar() {
         }`}
       >
         <div className="bg-white/95 backdrop-blur-2xl border-t border-slate-200 px-4 py-4 space-y-2">
-          {navLinks.map(link => (
-            <a
-              key={link.label}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block py-3 px-4 rounded-xl text-slate-700 hover:text-brand-dark hover:bg-slate-50 text-sm font-medium transition-all"
-            >
-              {link.label}
-            </a>
-          ))}
           <a
-            href="#products"
+            href="#footer"
             onClick={() => setMobileOpen(false)}
             className="btn-gold w-full justify-center mt-2"
           >
-            Shop Now
+            Enquiry Now
           </a>
         </div>
       </div>

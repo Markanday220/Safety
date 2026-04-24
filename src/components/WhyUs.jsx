@@ -103,16 +103,16 @@ export default function WhyUs() {
 
         {/* Authority bar */}
         <div className="mt-14 glass-card p-6">
-          <div className="flex flex-wrap items-center justify-center gap-8 text-center">
+          <div className="flex flex-wrap items-stretch justify-center gap-8 text-center">
             {[
-              { value: '10,000+', label: 'Satisfied Businesses' },
-              { value: '500+', label: 'Safety Products' },
-              { value: '15+', label: 'Years of Excellence' },
-              { value: '99.8%', label: 'On-Time Delivery' },
-              { value: '4.9/5', label: 'Average Rating' },
+              { value: '10,000+', label: 'Satisfied Businesses', color: 'text-black' },
+              { value: '500+', label: 'Safety Products', color: 'text-black' },
+              { value: '15+', label: 'Years of Excellence', color: 'text-black' },
+              { value: '99.8%', label: 'On-Time Delivery', color: 'text-black' },
+              { value: '4.9/5', label: 'Average Rating', color: 'text-black' },
             ].map((s, i) => (
-              <div key={i} className="min-w-[100px]">
-                <div className="text-2xl md:text-3xl font-display font-bold text-brand-gold">{s.value}</div>
+              <div key={i} className="min-w-[100px] flex-1 flex flex-col justify-center">
+                <div className={`text-2xl md:text-3xl font-display font-bold ${s.color}`}>{s.value}</div>
                 <div className="text-xs text-slate-600 mt-1">{s.label}</div>
               </div>
             ))}

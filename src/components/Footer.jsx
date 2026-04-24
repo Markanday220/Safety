@@ -17,7 +17,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50 border-t border-slate-200 pt-20 pb-8" id="footer">
+    <footer className="relative bg-slate-50 border-t border-slate-200 pt-20 pb-8" id="footer">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Top section */}
@@ -33,7 +33,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-slate-600 text-sm leading-relaxed mb-5">
-              India's most trusted premium safety equipment provider. Protecting workforces since 2009.
+              UK's most trusted premium safety equipment provider. Protecting workforces since 2009.
             </p>
             {/* Social */}
             <div className="flex items-center gap-3">
@@ -76,7 +76,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-xs text-slate-500 mb-0.5">Call Us</div>
-                <div className="text-sm font-semibold text-brand-dark">+91 80000 00000</div>
+                <div className="text-sm font-semibold text-brand-dark">Phone : 0121 555 8446</div>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -94,7 +94,7 @@ export default function Footer() {
               </div>
               <div>
                 <div className="text-xs text-slate-500 mb-0.5">Head Office</div>
-                <div className="text-sm font-semibold text-brand-dark">Mumbai, Maharashtra, India</div>
+                <div className="text-sm font-semibold text-brand-dark">Unit 82B, Rolfe Street, Smethwick, Birmingham, B66 2AX</div>
               </div>
             </div>
           </div>
@@ -105,12 +105,49 @@ export default function Footer() {
           <p className="text-xs text-slate-500">
             © {new Date().getFullYear()} SafetyPlus India Pvt. Ltd. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (
-              <a key={link} href="#" className="text-xs text-slate-500 hover:text-brand-dark transition-colors">
-                {link}
+          <div className="flex flex-wrap items-center gap-4">
+            <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300">
+              <a
+                href="https://fabulousmedia.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                aria-label="FabulousMedia"
+              >
+                <img
+                  src="https://play.fabulousmedia.in/sitecredit/images/fabulousmedia.svg"
+                  alt="FabulousMedia"
+                  className="h-3 w-auto"
+                  loading="lazy"
+                  width="80"
+                  height="12"
+                />
               </a>
-            ))}
+              <div className="h-3 w-px bg-slate-200" />
+              <a
+                href="https://gocommercially.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded p-0.5 opacity-90 hover:opacity-100 transition-opacity flex items-center justify-center hover:scale-110 transition-transform"
+                aria-label="GoCommercially"
+              >
+                <img
+                  src="https://play.fabulousmedia.in/sitecredit/images/gocommercially.svg"
+                  alt="GoCommercially"
+                  className="h-3 w-auto"
+                  loading="lazy"
+                  width="80"
+                  height="12"
+                />
+              </a>
+            </div>
+            <div className="flex items-center gap-6">
+              {['Privacy Policy', 'Terms of Service', 'Cookie Policy'].map(link => (
+                <a key={link} href="#" className="text-xs text-slate-500 hover:text-brand-dark transition-colors">
+                  {link}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
