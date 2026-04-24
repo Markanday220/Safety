@@ -106,7 +106,7 @@ export default function Footer() {
             © {new Date().getFullYear()} SafetyPlus India Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex flex-wrap items-center gap-4">
-            <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300">
+            <div className="inline-flex items-center gap-1.5 rounded-md px-2 py-1 border border-white/30 bg-white/15 shadow-sm hover:shadow-md hover:bg-white/20 transition-all duration-300 ml-4">
               <a
                 href="https://fabulousmedia.in"
                 target="_blank"
@@ -123,7 +123,7 @@ export default function Footer() {
                   height="12"
                 />
               </a>
-              <div className="h-3 w-px bg-slate-200" />
+              <div className="h-3 w-px bg-white/30 transition-colors duration-300"></div>
               <a
                 href="https://gocommercially.com"
                 target="_blank"
