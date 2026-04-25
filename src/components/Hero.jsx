@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
 
           {/* Headline */}
-          <h1 className="sm:mt-12 font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mb-4 text-brand-dark">
+          <h1 className="sm:mt-4 font-display font-bold text-4xl md:text-5xl lg:text-6xl leading-tight tracking-tight mb-2 text-brand-dark">
             Your People Deserve{' '}
             <span className=" gradient-text">
               Better Protection
