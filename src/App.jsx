@@ -9,7 +9,6 @@ import Industries from './components/Industries'
 import HowItWorks from './components/HowItWorks'
 import Products from './components/Products'
 import StatsSection from './components/StatsSection'
-import QuickStats from './components/QuickStats'
 import EventSection from './components/EventSection'
 import Testimonials from './components/Testimonials'
 import WhyUs from './components/WhyUs'
@@ -50,7 +49,6 @@ export default function App() {
 
         {/* FUNNEL: Awareness → Trust → Problem → Solution → Purchase */}
         <Hero />
-        <QuickStats />
         <EventSection />
         <Trust />
         <BrandsSection />

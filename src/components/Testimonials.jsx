@@ -67,8 +67,8 @@ export default function Testimonials() {
           alt="Construction workers team"
           className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/96 via-white/90 to-white/94" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/72 via-white/38 to-white/68" />
+        <div className="absolute inset-0 bg-brand-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/95 via-brand-dark/40 to-brand-dark/95" />
       </div>
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/25 to-transparent z-10" />
@@ -76,16 +76,16 @@ export default function Testimonials() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-14 max-w-4xl mx-auto rounded-[2rem] bg-white/62 backdrop-blur-sm border border-white/60 shadow-[0_24px_80px_rgba(255,255,255,0.28)] px-6 py-8 md:px-10 md:py-10">
-          <div className="section-tag mb-4 justify-center">
+        <div className="text-center mb-14 max-w-4xl mx-auto px-6 py-8 md:px-10 md:py-10">
+          <div className="section-tag mb-4 justify-center text-brand-gold border-brand-gold/30">
             <Star className="w-3.5 h-3.5 fill-brand-gold" />
             Social Proof
           </div>
-          <h2 className="font-display font-bold text-4xl md:text-5xl text-brand-dark mb-4">
+          <h2 className="font-display font-bold text-4xl md:text-5xl text-white mb-4">
             Real Results,{' '}
             <span className="gradient-text-gold">Real Businesses</span>
           </h2>
-          <p className="text-brand-dark text-lg font-medium max-w-xl mx-auto">
+          <p className="text-white/60 text-lg font-medium max-w-xl mx-auto">
             Don't take our word for it. Here's what India's leading companies say.
           </p>
         </div>

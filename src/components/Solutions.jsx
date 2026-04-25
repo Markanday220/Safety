@@ -85,7 +85,7 @@ export default function Solutions() {
                 rel="noreferrer"
                 className="group no-underline"
               >
-                <div className={`glass-card gradient-border p-7 group-hover:-translate-y-2 transition-all duration-300 bg-white hover:-translate-y-2`}>
+                <div className="glass-card gradient-border p-7 h-full group-hover:-translate-y-2 transition-all duration-300 bg-white flex flex-col justify-between">
                   <div className="mb-5">
                     <div className={`inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-slate-100 border border-slate-200 ${sol.color} mb-4 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className="w-6 h-6" />
@@ -94,7 +94,7 @@ export default function Solutions() {
                     <p className={`text-sm font-semibold ${sol.color} mb-3`}>{sol.benefit}</p>
                     <p className="text-slate-600 text-sm leading-relaxed">{sol.detail}</p>
                   </div>
-                  <div className={`flex items-center gap-2 text-sm font-medium ${sol.color} hover:gap-3 transition-all duration-200`}>
+                  <div className={`flex items-center gap-2 text-sm font-medium ${sol.color} group-hover:gap-3 transition-all duration-200`}>
                     Explore Range <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>

@@ -83,16 +83,16 @@ export default function Offer() {
           alt="Industrial workers team"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/66 via-white/44 to-white/58" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/42 via-white/16 to-white/34" />
+        <div className="absolute inset-0 bg-brand-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/95 via-brand-dark/40 to-brand-dark/95" />
       </div>
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-gold/30 to-transparent z-10" />
       <div className="absolute inset-0 radial-glow-gold opacity-25 pointer-events-none z-0" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="text-center mb-5 max-w-4xl mx-auto rounded-[2rem] bg-slate-950/18 backdrop-blur-md border border-white/45 shadow-[0_24px_70px_rgba(15,23,42,0.16)] px-6 py-8 md:px-10 md:py-10">
-          <div className="section-tag mb-4 justify-center">
+        <div className="text-center mb-5 max-w-4xl mx-auto px-6 py-8 md:px-10 md:py-10">
+          <div className="section-tag mb-4 justify-center text-brand-gold border-brand-gold/30">
             <Flame className="w-3.5 h-3.5 text-brand-gold" />
             <span className="text-brand-gold">Limited Time Offer</span>
           </div>

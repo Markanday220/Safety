@@ -90,7 +90,7 @@ export default function WhyUs() {
           {reasons.map((r, i) => {
             const Icon = r.icon
             return (
-              <div key={i} className={`glass-card border ${r.border} p-7 group hover:-translate-y-2 transition-all duration-300`}>
+              <div key={i} className={`glass-card border ${r.border} p-7 h-full group hover:-translate-y-2 transition-all duration-300`}>
                 <div className={`w-12 h-12 rounded-2xl ${r.bg} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
                   <Icon className={`w-6 h-6 ${r.color}`} />
                 </div>

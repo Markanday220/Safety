@@ -26,11 +26,12 @@ export default function Trust() {
         {/* Background */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1590859808308-3d2d9c515b1a?w=1920&q=80&fit=crop"
-            alt="Workers in safety gear"
-            className="w-full h-full object-cover object-top"
+            src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=1920&q=90&fit=crop"
+            alt="Safety and industrial scene"
+            className="w-full h-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-white/92 via-white/82 to-white/94" />
+          <div className="absolute inset-0 bg-slate-900/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/95 via-brand-dark/70 to-brand-dark/90" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -50,8 +50,8 @@ export default function HowItWorks() {
           alt="Safety process"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white/96 via-white/88 to-white/95" />
-        <div className="absolute inset-0 bg-gradient-to-r from-white/70 via-transparent to-white/55" />
+        <div className="absolute inset-0 bg-brand-dark/80" />
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-dark/95 via-brand-dark/40 to-brand-dark/95" />
       </div>
 
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent z-10" />
@@ -59,7 +59,7 @@ export default function HowItWorks() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16 max-w-4xl mx-auto rounded-[2rem] bg-white/58 backdrop-blur-sm border border-white/60 shadow-[0_24px_70px_rgba(255,255,255,0.28)] px-6 py-8 md:px-10 md:py-10">
+        <div className="text-center mb-14 max-w-4xl mx-auto px-6 py-8 md:px-10 md:py-10">
           <div className="mb-4 flex items-center justify-center gap-2 text-brand-gold text-xs font-semibold tracking-widest uppercase">
             <span className="w-1.5 h-1.5 rounded-full bg-brand-gold" />
             How It Works
@@ -68,7 +68,7 @@ export default function HowItWorks() {
             Protected in{' '}
             <span className="text-brand-gold">4 Simple Steps</span>
           </h2>
-          <p className="text-white/90 text-lg md:text-[1.15rem] font-medium max-w-2xl mx-auto">
+          <p className="text-white/60 text-lg font-medium max-w-xl mx-auto">
             From first consultation to full compliance — we handle every step so you can focus on running your business.
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function HowItWorks() {
           {steps.map((s, i) => {
             const Icon = s.icon
             return (
-              <div key={i} className={`glass-card border ${s.border} p-7 relative group hover:-translate-y-2 transition-all duration-300 z-10`}>
+              <div key={i} className={`glass-card border ${s.border} p-7 h-full relative group hover:-translate-y-2 transition-all duration-300 z-10`}>
                 {/* Step number */}
                 <div className="flex items-center justify-between mb-5">
                   <div className={`w-12 h-12 rounded-2xl ${s.bg} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
