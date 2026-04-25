@@ -9,6 +9,8 @@ import Industries from './components/Industries'
 import HowItWorks from './components/HowItWorks'
 import Products from './components/Products'
 import StatsSection from './components/StatsSection'
+import QuickStats from './components/QuickStats'
+import EventSection from './components/EventSection'
 import Testimonials from './components/Testimonials'
 import WhyUs from './components/WhyUs'
 import Offer from './components/Offer'
@@ -17,11 +19,13 @@ import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
 import ChatWidget from './components/ChatWidget'
 import Cart from './components/Cart'
+import EnquiryModal from './components/EnquiryModal'
 import { CartContext } from './context/CartContext'
 
 export default function App() {
   const [cartItems, setCartItems] = useState([])
   const [cartOpen, setCartOpen] = useState(false)
+  const [enquiryOpen, setEnquiryOpen] = useState(false)
 
   const addToCart = (product) => {
     setCartItems(prev => {
@@ -42,10 +46,12 @@ export default function App() {
   return (
     <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, updateQty, cartOpen, setCartOpen }}>
       <div className="bg-white text-brand-dark font-sans antialiased">
-        <Navbar />
+        <Navbar onEnquiryClick={() => setEnquiryOpen(true)} />
 
         {/* FUNNEL: Awareness → Trust → Problem → Solution → Purchase */}
         <Hero />
+        <QuickStats />
+        <EventSection />
         <Trust />
         <BrandsSection />
         <StatsSection />
@@ -62,6 +68,7 @@ export default function App() {
         <Footer />
 
         <Cart />
+        <EnquiryModal isOpen={enquiryOpen} onClose={() => setEnquiryOpen(false)} />
         <ChatWidget />
       </div>
     </CartContext.Provider>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 
-export default function Navbar() {
+export default function Navbar({ onEnquiryClick }) {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
 
@@ -33,12 +33,12 @@ export default function Navbar() {
 
           {/* CTA Row */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href="#footer"
+            <button
+              onClick={onEnquiryClick}
               className="btn-gold text-sm px-5 py-2.5"
             >
-              Enquiry Now
-            </a>
+              Enquire Now
+            </button>
           </div>
 
           {/* Mobile toggle */}
@@ -60,13 +60,15 @@ export default function Navbar() {
         }`}
       >
         <div className="bg-white/95 backdrop-blur-2xl border-t border-slate-200 px-4 py-4 space-y-2">
-          <a
-            href="#footer"
-            onClick={() => setMobileOpen(false)}
+          <button
+            onClick={() => {
+              setMobileOpen(false)
+              onEnquiryClick()
+            }}
             className="btn-gold w-full justify-center mt-2"
           >
-            Enquiry Now
-          </a>
+            Enquire Now
+          </button>
         </div>
       </div>
     </header>
